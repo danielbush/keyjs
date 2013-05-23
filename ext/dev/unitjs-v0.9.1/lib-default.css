@@ -1,0 +1,126 @@
+
+/*
+Default styling for the default printer.
+*/
+
+.-unitjs * {
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size:11pt;
+}
+.-unitjs {
+    width:1000px;
+}
+.-unitjs > .tests {
+    padding-right:1em;
+}
+.-unitjs .tests {
+}
+.-unitjs .tests > .name {
+    font-weight:bold;
+    margin-top:0.2em;
+}
+.-unitjs .tests.FAIL .name {
+    background-color:#fcc;
+}
+.-unitjs .tests.PASS .name {
+    background-color:#cfc;
+}
+.-unitjs .tests.ERROR > .name {
+    background-color:#fcc;
+    color:red;
+}
+.-unitjs .tests.NOTIMPLEMENTED .name {
+    background-color:#ccf;
+    font-weight:bold;
+}
+
+.-unitjs .tests > .name {
+    font-size:130%;
+    padding-left:10px;
+    line-height:1.8em;
+    border-top:solid #555 1px;
+}
+
+/* test-group */
+.-unitjs .tests .test-group {
+    padding-left:1.5em;
+}
+
+/* stats */
+.-unitjs .tests > .name > .stats {
+    float:right;
+    color:#555;
+}
+.-unitjs .tests > .name > .stats > .tuple {
+    padding-right:10px;
+}
+.-unitjs .tests > .name > .stats > .tuple > .key {
+    font-weight:bold;
+}
+.-unitjs .tests > .name > .stats > .tuple > .value {
+    font-weight:normal;
+}
+
+/* test */
+.-unitjs .tests .test {
+}
+
+/* test label */
+.-unitjs .tests .test > .name {
+    width:auto;
+    padding-left:10px;
+    line-height:1.5em;
+    border-top:dotted #555 1px;
+    margin-top:0.3em;
+}
+.-unitjs .tests .test.PASS > .name {
+    background-color:#efe;
+    color:green;
+}
+.-unitjs .tests .test.FAIL > .name {
+    background-color:#fee;
+    color:red;
+}
+.-unitjs .tests .test.ERROR > .name {
+    background-color:#fee;
+    color:red;
+    font-weight:bold;
+}
+.-unitjs .tests .test.NOTIMPLEMENTED > .name {
+    background-color:#eef;
+    color:blue;
+}
+
+/* test status */
+.-unitjs .tests .test .status {
+    float:right;
+    clear:right;
+    font-weight:bold;
+    padding-top:0.1em;
+    padding-bottom:0.1em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+.-unitjs .tests .test .status.FAIL {
+    color:red;
+}
+.-unitjs .tests .test .status.ERROR {
+    color:white;
+    background-color:red;
+}
+
+
+/* details */
+.-unitjs .tests .test .details {
+    padding-left:1em;
+}
+.-unitjs .tests .test .details pre {
+    background-color:#eee;
+    color:#555;
+    font-family:monospace;
+    padding:1em;
+    font-size:100%;
+    overflow:scroll;
+}
