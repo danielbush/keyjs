@@ -36,7 +36,6 @@ $dlb_id_au$.keys.controller = function() {
 
   var keys       = $dlb_id_au$.keys;
   var keyCodes   = $dlb_id_au$.keys.keyCodes;
-  var textualize = $dlb_id_au$.keys.textualize;
 
   var browser  = {
     safari:(navigator.vendor &&
@@ -215,7 +214,6 @@ $dlb_id_au$.keys.controller = function() {
       if(RECEIVER) RECEIVER(module.evt);
       module.DEBUG && console.log('[keydown/receive] normalized:');
       module.DEBUG && console.log(module.evt);
-      module.DEBUG && console.log('...textualized:'+textualize(module.evt));
       return preventDefault(e);
     }
 
@@ -300,7 +298,6 @@ $dlb_id_au$.keys.controller = function() {
       if(RECEIVER) RECEIVER(module.evt);
       module.DEBUG && console.log('[keypress/receive] normalized:');
       module.DEBUG && console.log(module.evt);
-      module.DEBUG && console.log('...textualized:'+textualize(module.evt));
       return preventDefault(e);
     }
 
